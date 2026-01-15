@@ -634,6 +634,63 @@ section {
   }
 }
 
+/* =========================================
+   AJUSTE SOLO PARA MÓVIL: LOGO + BARRA SUPERIOR
+   (PÉGALO AL FINAL DEL CSS)
+========================================= */
+@media (max-width: 768px){
+
+  /* Barra superior más delgada */
+  .menu{
+    padding: 8px 12px !important;
+    background: rgba(10, 31, 68, 0.95);
+  }
+
+  /* Logo más pequeño (esto es lo que estás pidiendo) */
+  .logo{
+    width: 52px !important;
+    height: 52px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18) !important;
+  }
+
+  .logo img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Menos espacio arriba del contenido (porque el menú fijo ya no es tan alto) */
+  .header{
+    padding-top: 85px !important;
+  }
+}
+
+/* =========================================
+   FIX IMÁGENES EN MÓVIL (NO RECORTE)
+========================================= */
+@media (max-width: 768px){
+
+  /* Servicios */
+  .service-card img{
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+
+  /* Imágenes de "Sobre Nosotros" */
+  .about-images img{
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+
+  /* Imagen del header */
+  .header-image img{
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+
 
 
 
