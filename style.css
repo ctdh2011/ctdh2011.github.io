@@ -691,6 +691,42 @@ section {
   }
 }
 
+/* =========================================
+   CARRUSEL SOLO EN MÓVIL: SOBRE NOSOTROS
+========================================= */
+@media (max-width: 768px){
+
+  /* Contenedor del carrusel */
+  .about-images{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+
+  /* Ocultar scrollbar (opcional) */
+  .about-images::-webkit-scrollbar{
+    display: none;
+  }
+  .about-images{
+    scrollbar-width: none;
+  }
+
+  /* Cada imagen ocupa 100% del ancho (1 por slide) */
+  .about-images img{
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    scroll-snap-align: center;
+    border-radius: 20px;
+  }
+}
+
+
 
 
 
