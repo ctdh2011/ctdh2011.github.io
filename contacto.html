@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | CTDH</title>
+  <meta name="description" content="Contáctanos por WhatsApp, llamada o correo. CTDH Topografía, Ingeniería y Construcción en Honduras." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="contact-hero" id="top">
+  <img class="contact-hero__bg" src="imagenes/23 (1).jpg" alt="CTDH Contacto">
+
+  <div class="menu container">
+    <a href="index.html" class="logo">
+      <img src="imagenes/logo-nuevo.png" alt="CTDH Logo">
+    </a>
+
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container contact-hero__content">
+    <h1>Contacto</h1>
+    <p>Cuéntanos tu proyecto. Respuesta rápida por WhatsApp.</p>
+    <div class="contact-hero__actions">
+      <a class="btn-primary" href="https://wa.me/50497122804" target="_blank">Escribir por WhatsApp</a>
+      <a class="btn-secondary" href="tel:+50497122804">Llamar</a>
+    </div>
+  </div>
+</header>
+
+<main class="container contact-page">
+
+  <!-- Tarjetas rápidas -->
+  <section class="contact-cards">
+    <a class="contact-card" href="https://wa.me/50497122804" target="_blank">
+      <div class="contact-card__icon">💬</div>
+      <div class="contact-card__text">
+        <h3>WhatsApp</h3>
+        <p>Respuesta rápida</p>
+        <span>+504 9712-2804</span>
+      </div>
+    </a>
+
+    <a class="contact-card" href="tel:+50497122804">
+      <div class="contact-card__icon">📞</div>
+      <div class="contact-card__text">
+        <h3>Llamada</h3>
+        <p>Atención directa</p>
+        <span>+504 9712-2804</span>
+      </div>
+    </a>
+
+    <a class="contact-card" href="mailto:ctdh2011@yahoo.com">
+      <div class="contact-card__icon">✉️</div>
+      <div class="contact-card__text">
+        <h3>Correo</h3>
+        <p>Envíanos detalles</p>
+        <span>ctdh2011@yahoo.com</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- Form + Info -->
+  <section class="contact-grid2">
+    <div class="contact-panel">
+      <h2>Solicitar cotización</h2>
+      <p class="muted">Si puedes, incluye ubicación, tipo de servicio y fecha estimada.</p>
+
+      <!-- Form local (no envía a nada aún). Si quieres, luego lo conectamos a Formspree -->
+  <form 
+  class="contact-form" 
+  id="contactForm"
+  action="https://formspree.io/f/abcdwxyz"
+  method="POST"
+>
+  <div class="field">
+    <label>Nombre</label>
+    <input id="c_name" type="text" placeholder="Tu nombre" required>
+  </div>
+
+  <div class="field">
+    <label>Teléfono</label>
+    <input id="c_phone" type="tel" placeholder="Ej: +504 9xxx-xxxx" required>
+  </div>
+
+  <div class="field">
+    <label>Servicio</label>
+    <select id="c_service" required>
+      <option value="" selected disabled>Selecciona una opción</option>
+      <option>Topografía</option>
+      <option>Drones / Fotogrametría</option>
+      <option>Ingeniería / Supervisión</option>
+      <option>Construcción</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Mensaje</label>
+    <textarea id="c_msg" rows="5" placeholder="Ej: necesito levantamiento topográfico para lote..." required></textarea>
+  </div>
+
+  <button class="btn-primary" type="submit">Enviar por WhatsApp</button>
+
+  <small class="muted">Al enviar, se abrirá WhatsApp con el mensaje listo.</small>
+</form>
+
+    </div>
+
+    <aside class="contact-panel contact-panel--info">
+      <h2>Información</h2>
+
+      <div class="info-row">
+        <strong>Empresa:</strong>
+        <span>CTDH – Construcción Topografía Digital Herrera</span>
+      </div>
+
+      <div class="info-row">
+        <strong>Teléfono:</strong>
+        <span><a href="tel:+50497122804">+504 9712-2804</a></span>
+      </div>
+
+      <div class="info-row">
+        <strong>Correo:</strong>
+        <span><a href="mailto:ctdh2011@yahoo.com">ctdh2011@yahoo.com</a></span>
+      </div>
+
+      <div class="info-row">
+        <strong>Horario:</strong>
+        <span>Lun–Sáb (según proyecto)</span>
+      </div>
+
+      <div class="map-box">
+  <iframe
+    src="https://www.google.com/maps?q=Tegucigalpa,+Honduras&output=embed"
+    width="100%"
+    height="260"
+    style="border:0; border-radius:18px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+      </div>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-content container">
+    <div class="footer-brand">
+      <img src="imagenes/logo-nuevo.png" alt="CTDH Logo">
+      <p>Construcción Topografía Digital Herrera<br>ctdh2011@yahoo.com</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/profile.php?id=61572333998054" target="_blank">
+        <img src="imagenes/s1.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/ctdh135/" target="_blank">
+        <img src="imagenes/s2.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/50497122804" target="_blank">
+        <img src="imagenes/whatsapp.svg" alt="WhatsApp" width="22">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/50497122804" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <img src="imagenes/LOGO WASAR.jpeg" alt="WhatsApp">
+</a>
+
+<script>
+  // Menú móvil
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.navbar');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  }
+</script>
+<script>
+  // === Config ===
+  const WHATSAPP_NUMBER = "50497122804"; // sin +, sin espacios
+
+  // Form -> WhatsApp
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("c_name")?.value.trim();
+      const phone = document.getElementById("c_phone")?.value.trim();
+      const service = document.getElementById("c_service")?.value.trim();
+      const msg = document.getElementById("c_msg")?.value.trim();
+
+      // Mensaje bonito
+      const text =
+`Hola CTDH, quiero cotizar:
+
+👤 Nombre: ${name}
+📞 Teléfono: ${phone}
+🧰 Servicio: ${service}
+📝 Detalles: ${msg}
+
+Gracias.`;
+
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank");
+
+      // Opcional: limpiar
+      form.reset();
+    });
+  }
+</script>
+
+</body>
+</html>
+
